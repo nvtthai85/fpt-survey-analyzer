@@ -239,10 +239,11 @@ def fill_fpt_template(
             ws_rate.cell(row=11, column=15, value=sv_biz)
         ws_rate.cell(row=11, column=16, value=len(df_biz))
 
-    # 11. Clear và điền các ý kiến phản hồi thô vào 'Gop y Q1', 'Gop y Q2', 'Gop y Q4', 'Gop y Q5'
+    # 11. Clear và điền các ý kiến phản hồi thô vào các sheet 'Gop y Q*'
     q_to_sheet = {
         "Q1": "Gop y Q1",
         "Q2": "Gop y Q2",
+        "Q3": "Gop y Q3",
         "Q4": "Gop y Q4",
         "Q5": "Gop y Q5"
     }
